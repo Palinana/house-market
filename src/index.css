@@ -2,6 +2,30 @@
 
 
 /*=============== BASE ===============*/
+/* 
+.Toastify__toast--error {
+  border: 1px solid #EB5757;
+  border-radius: 50px !important;
+  background: #FAE1E2 !important;
+}
+.Toastify__toast--error::after {
+  position: absolute;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 700;
+  left:265px;
+  padding-top: 14px !important;
+}
+.Toastify__toast--error::before {
+position:relative; 
+z-index:100000;
+left:12px;
+top:6px;
+}
+
+.Toastify__close-button {
+  align-self: center;
+} */
 
 * {
   box-sizing: border-box;
@@ -62,6 +86,25 @@ button {
   border-radius: 1rem;
 }
 
+/*=============== LAYOUT ===============*/
+.pageContainer,
+.offers,
+.profile,
+.listingDetails,
+.category,
+.explore {
+  margin: 1rem;
+}
+@media (min-width: 1024px) {
+  .pageContainer,
+  .offers,
+  .profile,
+  .listingDetails,
+  .category,
+  .explore {
+    margin: 3rem;
+  }
+}
   
 /*=============== BUTTONS ===============*/
 
@@ -91,25 +134,6 @@ button {
   position: absolute;
   top: -3.4%;
   right: 20px;
-}
-
-.pageContainer,
-.offers,
-.profile,
-.listingDetails,
-.category,
-.explore {
-  margin: 1rem;
-}
-@media (min-width: 1024px) {
-  .pageContainer,
-  .offers,
-  .profile,
-  .listingDetails,
-  .category,
-  .explore {
-    margin: 3rem;
-  }
 }
 
 .loadingSpinnerContainer {
@@ -194,7 +218,7 @@ button {
   color: #2c2c2c;
 }
 
-/*=============== SIGNUP ===============*/
+/*=============== SIGN-IN ===============*/
 .nameInput {
   margin-bottom: 2rem;
   background: url('./assets/svg/badgeIcon.svg') #ffffff 2.5% center no-repeat;
@@ -204,6 +228,8 @@ button {
   margin-bottom: 2rem;
   background: url('./assets/svg/personIcon.svg') #ffffff 2.5% center no-repeat;
 }
+
+/*=============== FORGOT PASSWORD ===============*/
 
 .passwordInputDiv {
   position: relative;
@@ -228,6 +254,8 @@ button {
   font-weight: 600;
   text-align: right;
 }
+
+/*=============== SIGN-UP ===============*/
 
 .signInBar,
 .signUpBar {
@@ -317,6 +345,8 @@ button {
     margin-bottom: 10rem;
   }
 }
+
+/*=============== EXPLORE ===============*/
 
 .exploreHeading,
 .exploreCategoryHeading {
